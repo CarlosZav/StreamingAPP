@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="689.0" prefWidth="1109.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tmr.PeliculasController">
+   <children>
+      <Pane fx:id="ReproPane" layoutY="-1.0" prefHeight="720.0" prefWidth="1180.0">
+         <children>
+            <Pane fx:id="InVidPane" layoutY="672.0" opacity="0.66" prefHeight="50.0" prefWidth="1180.0" style="-fx-background-color: #6A5ACD;">
+               <children>
+                  <ImageView fx:id="PlayImageB" fitHeight="36.0" fitWidth="48.0" layoutX="26.0" layoutY="7.0" onMouseClicked="#OnPlayClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../playImage.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="PauseImageB" fitHeight="36.0" fitWidth="36.0" layoutX="78.0" layoutY="7.0" onMouseClicked="#OnPauseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../pauseImage.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="130.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="ResetImageB" fitHeight="36.0" fitWidth="36.0" layoutX="130.0" layoutY="7.0" onMouseClicked="#OnResetClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../ResetAvr.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="BackImageB" fitHeight="38.0" fitWidth="36.0" layoutX="1108.0" layoutY="5.0" onMouseClicked="#OnBackClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../RegresarImage.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <MediaView fx:id="ReproMedia" fitHeight="850.0" fitWidth="1350.0" layoutY="-40.0" onMouseClicked="#OnMediaClick" onMouseMoved="#OnMediaMoves" />
+         </children></Pane>
+      <Pane fx:id="ComediaPane" layoutX="291.0" layoutY="-1.0" prefHeight="720.0" prefWidth="889.0" style="-fx-background-color: #fffafa;">
+         <children>
+            <AnchorPane prefHeight="103.0" prefWidth="889.0" style="-fx-background-color: #4B0082;">
+               <children>
+                  <Label layoutX="8.0" prefHeight="103.0" prefWidth="239.0" text="COMEDIA" textFill="SNOW">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Pane fx:id="pane1" layoutX="142.0" layoutY="151.0" prefHeight="464.0" prefWidth="620.0" style="-fx-background-color: #fffafa;">
+               <children>
+                  <ImageView fitHeight="431.0" fitWidth="302.0" layoutX="7.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../NoSeAceptan.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="446.0" fitWidth="291.0" layoutX="332.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../LatinLover.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="pane2" layoutX="122.0" layoutY="138.0" prefHeight="517.0" prefWidth="648.0" style="-fx-background-color: #fffafa;">
+               <children>
+                  <ImageView fitHeight="433.0" fitWidth="291.0" layoutX="349.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SonComoNiños.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="432.0" fitWidth="316.0" layoutX="14.0" layoutY="23.0" onMouseClicked="#OnSiliconClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../SiliconAvr.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="pane3" layoutX="126.0" layoutY="154.0" prefHeight="458.0" prefWidth="638.0" style="-fx-background-color: #fffafa;">
+               <children>
+                  <ImageView fitHeight="431.0" fitWidth="348.0" layoutX="22.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Sexpath.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="431.0" fitWidth="305.0" layoutX="339.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../TWM.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="103.0" fitWidth="82.0" layoutX="24.0" layoutY="342.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../BackButtonImage.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="82.0" layoutX="793.0" layoutY="342.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../NextButtonImage.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="PopularesPane" layoutX="291.0" prefHeight="720.0" prefWidth="889.0" style="-fx-background-color: #fffafa;">
+         <children>
+            <AnchorPane prefHeight="103.0" prefWidth="889.0" style="-fx-background-color: #4B0082;">
+               <children>
+                  <Label layoutX="14.0" layoutY="33.0" text="MÁS POPULARES" textFill="SNOW">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="BreakingBadImageB" fitHeight="263.0" fitWidth="213.0" layoutX="338.0" layoutY="133.0" onMouseClicked="#onBreakingClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../BreakingBad.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="GameOTImageB" fitHeight="290.0" fitWidth="197.0" layoutX="565.0" layoutY="130.0" onMouseClicked="#OnGameOTClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../GameOfThrones.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="LaCasaDPImageB" fitHeight="284.0" fitWidth="226.0" layoutX="114.0" layoutY="418.0" onMouseClicked="#OnCasaClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../LaCasa.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="OrangeImageB" fitHeight="284.0" fitWidth="283.0" layoutX="341.0" layoutY="418.0" onMouseClicked="#OnOrangeClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../OrangeIs.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="StrangerImageB" fitHeight="284.0" fitWidth="239.0" layoutX="568.0" layoutY="418.0" onMouseClicked="#OnStrangerClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../StrangerThings.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="SiliconImage" fitHeight="263.0" fitWidth="212.0" layoutX="110.0" layoutY="130.0" onMouseClicked="#OnSiliconClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SiliconAvr.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="CategoryPane" prefHeight="720.0" prefWidth="259.0" style="-fx-background-color: #6A5ACD;">
+         <children>
+            <Button fx:id="PopularesButton" alignment="BASELINE_LEFT" layoutX="-6.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="59.0" prefWidth="297.0" style="-fx-background-color: #6A5ACD;" text="          Populares" textFill="SNOW">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ComediaButton" alignment="BASELINE_LEFT" layoutX="-6.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="59.0" prefWidth="297.0" style="-fx-background-color: #6A5ACD;" text="          Comedia" textFill="SNOW">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="-6.0" layoutY="360.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="297.0" style="-fx-background-color: #6A5ACD;" text="          Acción" textFill="SNOW">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="Logodos" fitHeight="103.0" fitWidth="119.0" layoutX="94.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../stremio-purple-small.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" layoutX="-6.0" layoutY="419.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="297.0" style="-fx-background-color: #6A5ACD;" text="          Terror" textFill="SNOW">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="-6.0" layoutY="471.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="297.0" style="-fx-background-color: #6A5ACD;" text="          Romantica" textFill="SNOW">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="-6.0" layoutY="530.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="297.0" style="-fx-background-color: #6A5ACD;" text="          Infantiles" textFill="SNOW">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField layoutX="70.0" layoutY="177.0" prefHeight="32.0" prefWidth="197.0" />
+            <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="26.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icone-loupe-gris.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
